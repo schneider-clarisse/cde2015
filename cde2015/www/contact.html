@@ -11,8 +11,7 @@
   <link rel="icon" href="assets/img/favicon.ico" type="image/x-icon">
   <link rel="stylesheet" href="app.css">
   <link href='http://fonts.googleapis.com/css?family=Roboto:400,100,300' rel='stylesheet' type='text/css'>
-  <script type="text/javascript" src="assets/js/jquery-1.11.0.min.js"></script>
-  <script type="text/javascript" src="assets/js/jquery.stellar.js"></script>
+  <script type="text/javascript" src="assets/js/jquery-2.1.3.min.js"></script>
   <script type="text/javascript" src="assets/js/app.js"></script>
 </head>
 <body>
@@ -20,14 +19,25 @@
   <div id="menu">
     <div class="pure-menu pure-menu-open pure-menu-horizontal">
       <a href="index.html" class="pure-menu-heading">
-        <img id="logo" src="assets/img/logo.png"><span>CDE 2015</span>
+        <img id="logo" src="assets/img/logo.png">
+        <span class="en">CDE 2015</span>
+        <span class="fr">CDI 2015</span>
       </a>
 
       <ul>
-	  <li><a href="about.html" class="">About</a></li>
-	  <li><a href="schedule.html" class="">Schedule</a></li>
-	  <li><a href="sponsors.html" class="">Sponsors</a></li>
-	  <li><a href="contact.html" class="selected">Contact</a></li>
+	  <li><a href="about.html" class="en ">About</a></li>
+    <li><a href="about.html" class="fr ">A Propos</a></li>
+	  <li><a href="delegates.html" class="en ">Delegates</a></li>
+    <li><a href="delegates.html" class="fr ">Délégués</a></li>
+    <!--<li><a href="schedule.html" class="">Schedule</a></li>-->
+	  <li><a href="sponsors.html" class="en ">Sponsors</a></li>
+    <li><a href="sponsors.html" class="fr ">Commanditaires</a></li>
+	  <li><a href="contact.html" class="en selected">Contact</a></li>
+    <li><a href="contact.html" class="fr selected">Contactez nous</a></li>
+      </ul>
+    <ul id="languages">
+    <li><a id="english" class="selected">English</a></li>
+    <li><a id="francais">Français</a></li>
       </ul>
     </div>
   </div>
@@ -35,55 +45,75 @@
   <div id="background"></div>
   <div id="view">
     <div class="container" id="contact-container">
-  <div class="landing" data-stellar-background-ratio="0.4">
+  <div class="landing">
     <div class="text-container">
-      <h1>Contact</h1>
+      <h1 class="en">Contact</h1>
+      <h1 class="fr">Contactez nous</h1>
     </div>
   </div>
   <div class="content-container">
-    <p>For all general inquiries, please email <a href="mailto:kristina.lee@cde.cfes.ca">kristina.lee@cde.cfes.ca</a></p>
-    <h2>Team Members</h2>
+    <p class="en">For all general inquiries, please email <a href="mailto:information@cde.cfes.ca">information@cde.cfes.ca</a></p>
+    <p class="fr">Pour les questions générales, envoyez-nous un courriel <a href="mailto:information@cde.cfes.ca">information@cde.cfes.ca</a></p>
+
+    <h2 class="en">Team Members</h2>
+    <h2 class="fr">Membres de l’équipe</h2>
     <a class="person-link" href="mailto:kristina.lee@cde.cfes.ca"><div class="person">
       <img src="assets/img/team/klee.jpg">
       <div class="info">
         <h3>Kristina<br>Lee</h3>
-        <p>Chair</p>
+        <p class="en">Chair</p>
+        <p class="fr">Président</p>
       </div>
     </div></a>
     <a class="person-link" href="mailto:julia.kavuma@cde.cfes.ca"><div class="person">
-      <img src="assets/img/team/julia.jpg">
+      <img class="pic-show" src="assets/img/team/julia.jpg">
+      <img class="pic-hover" src="assets/img/team/julia_hover.jpg">
       <div class="info">
         <h3>Julia<br>Kavuma</h3>
-        <p>Event Programs</p>
+        <p class="en">Event Programs</p>
+        <p class="fr">Programmes d’événements</p>
       </div>
     </div></a>
     <a class="person-link" href="mailto:casey.palermo@cde.cfes.ca"><div class="person">
-      <img src="assets/img/team/casey.jpg">
+      <img class="pic-show" src="assets/img/team/casey.jpg">
+      <img class="pic-hover" src="assets/img/team/casey_hover.jpg">
       <div class="info">
         <h3>Casey<br>Palermo</h3>
-        <p>Hospitality</p>
+        <p class="en">Hospitality</p>
+        <p class="fr">Hospitalité</p>
       </div>
     </div></a>
     <a class="person-link" href="mailto:elizabeth.foran@cde.cfes.ca"><div class="person">
       <img src="assets/img/team/liz.jpg">
       <div class="info">
         <h3>Elizabeth<br>Foran</h3>
-        <p>Sponsorship</p>
+        <p class="en">Sponsorship</p>
+        <p class="fr">Commandite</p>
+      </div>
+    </div></a>
+    <a class="person-link" href="mailto:kevin.mcnamara@cde.cfes.ca"><div class="person">
+      <img class="pic-show" src="assets/img/team/kmac.jpg">
+      <img class="pic-hover" src="assets/img/team/kmac_hover.jpg">
+      <div class="info">
+        <h3>Kevin<br>McNamara</h3>
+        <p>Finance</p>
       </div>
     </div></a>
     <a class="person-link" href="mailto:victoria.debrincat@cde.cfes.ca"><div class="person">
       <img src="assets/img/team/vic.jpg">
       <div class="info">
         <h3>Victoria<br>Debrincat</h3>
-        <p>Media and IT</p>
+        <p class="en">Media and IT</p>
+        <p class="fr">Média et informatique</p>
       </div>
     </div></a>
     <a class="person-link" href="mailto:clarisse.schneider@cde.cfes.ca"><div class="person">
-      <img class="pic-show" src="assets/img/team/clary-1.png">
-      <img class="pic-hover" src="assets/img/team/clary-2.png">
+      <img class="pic-show" src="assets/img/team/clarisse.jpg">
+      <img class="pic-hover" src="assets/img/team/clarisse_hover.jpg">
       <div class="info">
         <h3>Clarisse<br>Schneider</h3>
-        <p>Media, IT, & Website</p>
+        <p class="en">Media, IT, & Website</p>
+        <p class="fr">Média, informatique et site web</p>
       </div>
     </div></a>
   </div>

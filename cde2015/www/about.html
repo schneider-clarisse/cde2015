@@ -11,8 +11,7 @@
   <link rel="icon" href="assets/img/favicon.ico" type="image/x-icon">
   <link rel="stylesheet" href="app.css">
   <link href='http://fonts.googleapis.com/css?family=Roboto:400,100,300' rel='stylesheet' type='text/css'>
-  <script type="text/javascript" src="assets/js/jquery-1.11.0.min.js"></script>
-  <script type="text/javascript" src="assets/js/jquery.stellar.js"></script>
+  <script type="text/javascript" src="assets/js/jquery-2.1.3.min.js"></script>
   <script type="text/javascript" src="assets/js/app.js"></script>
 </head>
 <body>
@@ -20,14 +19,25 @@
   <div id="menu">
     <div class="pure-menu pure-menu-open pure-menu-horizontal">
       <a href="index.html" class="pure-menu-heading">
-        <img id="logo" src="assets/img/logo.png"><span>CDE 2015</span>
+        <img id="logo" src="assets/img/logo.png">
+        <span class="en">CDE 2015</span>
+        <span class="fr">CDI 2015</span>
       </a>
 
       <ul>
-	  <li><a href="about.html" class="selected">About</a></li>
-	  <li><a href="schedule.html" class="">Schedule</a></li>
-	  <li><a href="sponsors.html" class="">Sponsors</a></li>
-	  <li><a href="contact.html" class="">Contact</a></li>
+	  <li><a href="about.html" class="en selected">About</a></li>
+    <li><a href="about.html" class="fr selected">A Propos</a></li>
+	  <li><a href="delegates.html" class="en ">Delegates</a></li>
+    <li><a href="delegates.html" class="fr ">Délégués</a></li>
+    <!--<li><a href="schedule.html" class="">Schedule</a></li>-->
+	  <li><a href="sponsors.html" class="en ">Sponsors</a></li>
+    <li><a href="sponsors.html" class="fr ">Commanditaires</a></li>
+	  <li><a href="contact.html" class="en ">Contact</a></li>
+    <li><a href="contact.html" class="fr ">Contactez nous</a></li>
+      </ul>
+    <ul id="languages">
+    <li><a id="english" class="selected">English</a></li>
+    <li><a id="francais">Français</a></li>
       </ul>
     </div>
   </div>
@@ -35,21 +45,39 @@
   <div id="background"></div>
   <div id="view">
     <div class="container" id="about-container">
-  <div class="landing" data-stellar-background-ratio="0.4">
+  <div class="landing">
     <div class="text-container">
-      <h1>About</h1>
+      <h1 class="en">About</h1>
+      <h1 class="fr">A Propos</h1>
     </div>
   </div>
   <div class="content-container">
-    <h2>Conference on Diversity in Engineering</h2>
-    <p>Cupcake ipsum dolor sit amet bear claw. Gummies cookie candy canes gummi bears sugar plum lemon drops gummi bears chocolate cake. Cake sweet fruitcake cookie cupcake sweet roll gingerbread. Powder bonbon tart. Cheesecake lemon drops halvah. Cake chocolate unerdwear.com jelly beans chupa chups pastry jelly-o lemon drops fruitcake. Halvah pie croissant tootsie roll sesame snaps marshmallow. Croissant muffin unerdwear.com apple pie chupa chups I love. Jelly beans cheesecake sesame snaps pie powder bonbon sweet roll. Muffin soufflé gummies I love sugar plum.</p>
-    <p>Cake toffee I love apple pie dragée unerdwear.com I love. Muffin sugar plum carrot cake gingerbread cotton candy. Chocolate bar chocolate cake toffee chupa chups tootsie roll sugar plum pudding. Sesame snaps gingerbread icing halvah sweet chupa chups sugar plum dessert. Bonbon caramels sugar plum apple pie lollipop chocolate. Dessert sweet cotton candy.</p>
-    <h2>Canadian Federation of Engineering Students</h2>
-    <p>Cupcake ipsum dolor sit amet bear claw. Gummies cookie candy canes gummi bears sugar plum lemon drops gummi bears chocolate cake. Cake sweet fruitcake cookie cupcake sweet roll gingerbread. Powder bonbon tart. Cheesecake lemon drops halvah. Cake chocolate unerdwear.com jelly beans chupa chups pastry jelly-o lemon drops fruitcake. Halvah pie croissant tootsie roll sesame snaps marshmallow. Croissant muffin unerdwear.com apple pie chupa chups I love. Jelly beans cheesecake sesame snaps pie powder bonbon sweet roll. Muffin soufflé gummies I love sugar plum.</p>
-    <p>Cake toffee I love apple pie dragée unerdwear.com I love. Muffin sugar plum carrot cake gingerbread cotton candy. Chocolate bar chocolate cake toffee chupa chups tootsie roll sugar plum pudding. Sesame snaps gingerbread icing halvah sweet chupa chups sugar plum dessert. Bonbon caramels sugar plum apple pie lollipop chocolate. Dessert sweet cotton candy.</p>
-    <h2>University of Waterloo</h2>
-    <p>Cupcake ipsum dolor sit amet bear claw. Gummies cookie candy canes gummi bears sugar plum lemon drops gummi bears chocolate cake. Cake sweet fruitcake cookie cupcake sweet roll gingerbread. Powder bonbon tart. Cheesecake lemon drops halvah. Cake chocolate unerdwear.com jelly beans chupa chups pastry jelly-o lemon drops fruitcake. Halvah pie croissant tootsie roll sesame snaps marshmallow. Croissant muffin unerdwear.com apple pie chupa chups I love. Jelly beans cheesecake sesame snaps pie powder bonbon sweet roll. Muffin soufflé gummies I love sugar plum.</p>
-    <p>Cake toffee I love apple pie dragée unerdwear.com I love. Muffin sugar plum carrot cake gingerbread cotton candy. Chocolate bar chocolate cake toffee chupa chups tootsie roll sugar plum pudding. Sesame snaps gingerbread icing halvah sweet chupa chups sugar plum dessert. Bonbon caramels sugar plum apple pie lollipop chocolate. Dessert sweet cotton candy.</p>
+    <h2 class="purple en">Event</h2>
+    <h2 class="purple fr">Évènement</h2>
+    <p class="en">The inaugural Conference on Diversity in Engineering (CDE) is a national forum that will focus on <span class="purple">diversity in the engineering</span> industry and the role that students will play in creating a more <span class="purple">inclusive</span> industry. It will take place in Waterloo, Ontario on the 13-15th November, 2015.</p>
+    <p class="en">CDE will bring together a delegate base of 150 Canadian, multi-disciplinary engineering students. The event will create a network of driven individuals looking to make a difference in the industry.</p>
+    <p class="fr">La première Conférence sur la Diversité en Ingénierie  (CDI) est un forum national qui est centré sur <span class="purple">la diversité des ingénieurs dans l’industrie</span> et le rôle que les étudiants joueront pour créer une industrie <span class="purple">plus inclusive</span>. Cette conférence aura lieu à Waterloo, Ontario du 13-16 Novembre 2015.</p>
+    <p class="fr">CDI rassemblera une base de 150 délégués canadiens, qui étudient dans des disciplines variées de la génie. L’évènement créera un réseau de personnes motivées cherchant à faire une différence dans l’industrie.</p>
+
+    <h2 class="en pink">Theme</h2>
+    <h2 class="fr pink">Thème</h2>
+    <p class="en">The theme for this year’s conference is <span class="pink">Algorithms for Success</span>. The sessions and speakers will expand on this theme to deliver a balanced and multifaceted approach towards <span class="pink">understanding and tackling the challenges surrounding diversity</span>, and creating opportunities for <span class="pink">inclusivity</span> in the Canadian engineering industry.</p>
+    <p class="fr">Cette année la conférence aura pour thème <span class="pink">« Les Algorithmes du Succès »</span>. Les sessions et les conférenciers développeront sur ce thème pour livrer une approche équilibrée et variée afin <span class="pink">de comprendre et relever les défis entourant la diversité</span>, ainsi que créer des opportunités pour <span class="pink">l’inclusivité</span> dans l’industrie canadienne d’ingénierie.</p>
+
+    <h2 class="en salmon">Past Success</h2>
+    <h2 class="fr salmon">Succès Passé</h2>
+    <p class="en">The Conference on Diversity in Engineering is run by the Canadian Federation of Engineering Students (CFES) and will replace the former, very successful National Conference on Women in Engineering (NCWiE). CFES is a group that aims to <span class="salmon">empower and improve</span> its member schools, <span class="salmon">voicing the opinion of engineering students</span> to other organizations in Canada. CFES has been governing and representing the interests of Canadian engineering students for the past 45 years.</p>
+    <p class="fr">La Conférence sur la Diversité en Ingénierie est dirigée par la Fédération canadienne étudiante de génie (FCEG) et remplace l’ancienne Conférence Nationale des Femmes en Ingénierie (CNFI)  qui a eu une grande quantité de succès dans le passé. La FCEG est un groupe qui a pour but <span class="salmon">d’améliorer et permettre</span> aux écoles qui en sont membres <span class="salmon">d’exprimer les opinions de ses étudiants en génie</span> aux autres organisations du Canada. La FCEG dirige et représente les intérêts des étudiants canadiens en génie depuis les 46 dernières années.</p>
+    <p class="en">NCWiE was founded by students at Queen’s University in response to the 1989 massacre at l’École Polytechnique in Montreal. Since then, it has been hosted by <span class="salmon">institutions across the country</span>, most recently by the University of British Columbia in Vancouver and the University of Saskatchewan in Saskatoon.</p>
+    <p class="fr">La CNFI fut fondée par des étudiants à l’Université de Queen’s suivant le massacre à l’École Polytechnique de Montréal en 1989. Dès lors, la conférence a été accueillie par <span class="salmon">des institutions à travers le pays</span>, plus récemment par l’Université de la Colombie Britannique à Vancouver et l’Université de Saskatchewan à Saskatoon.</p>
+
+
+    <h2 class="en gold">University of Waterloo</h2>
+    <h2 class="fr gold">L’Université de Waterloo</h2>
+    <p class="en">The University of Waterloo is proud to be hosting CDE 2015. A medium sized city, Waterloo, Ontario is home to two universities, Wilfrid Laurier University and the University of Waterloo, as well as Conestoga College, Ontario’s engineering- accredited college. It is also home to a growing tech industry that thrives off the innovative and entrepreneurial spirit boasted by the University of Waterloo.</p>
+    <p class="fr">L’Université de Waterloo est fière d’accueillir la CDI 2015. Étant une ville de taille moyenne, Waterloo, ON  inclut deux universités, l’Université Wilfred Laurier et l’Université de Waterloo ainsi que le Collège Conestoga, le premier collège de l’Ontario accrédité en génie. Waterloo est aussi la source d’une industrie technologique qui prospère à travers l’esprit entrepreneurial et innovateur supporté par l’Université de Waterloo.</p>
+    <p class="en">The University of Waterloo was founded in 1957 to focus on cooperative education in applied science education, and it now hosts the <span class="gold">largest undergraduate cooperative education program in the world</span>. The university has over 30 000 students enrolled in 6 faculties across 10 campuses. Home to a vibrant campus community that is truly representative of the <span class="gold">Canadian cultural mosaic</span>, the University of Waterloo an ideal host for the first Conference on Diversity in Engineering.</p>
+    <p class="fr">L’Université de Waterloo a été fondée en 1957 pour concentrer un intérêt sur l’éducation coopérative dans les sciences appliquées, elle contient maintenant <span class="gold">le plus large programme d’éducation coopérative du monde entier</span>. L’université a plus de 30 000 étudiants enregistrés dans 6 facultés à travers 10 campus. Abritant une communauté de campus vivace qui représente véritablement <span class="gold">la mosaïque culturelle canadienne</span>, l’Université de Waterloo est une hôte idéale pour la première Conférence sur la Diversité en Ingénierie.</p>
   </div>
     </div>
   </div>
